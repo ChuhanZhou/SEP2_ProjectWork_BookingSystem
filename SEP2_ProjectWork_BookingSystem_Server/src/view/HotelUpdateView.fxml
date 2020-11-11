@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HotelUpdateViewController">
+   <children>
+      <VBox prefHeight="641.0" prefWidth="610.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="610.0">
+               <children>
+                  <HBox prefHeight="86.0" prefWidth="38.0" />
+                  <Label prefHeight="53.0" prefWidth="162.0" text="Hotel">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="38.0" />
+                  <Label prefHeight="30.0" prefWidth="125.0" text="Hotel name : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hotelNameText" prefHeight="23.0" prefWidth="170.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="38.0" />
+                  <Label prefHeight="31.0" prefWidth="125.0" text="Hotel address : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hotelAddressText" alignment="TOP_LEFT" prefHeight="24.0" prefWidth="400.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="38.0" />
+                  <Label alignment="TOP_LEFT" prefHeight="118.0" prefWidth="143.0" text="Hotel Description : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="hotelDescriptionText" prefHeight="120.0" prefWidth="290.0" />
+               </children>
+            </HBox>
+            <VBox prefHeight="10.0" prefWidth="610.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="74.0" prefWidth="35.0" />
+                  <Label alignment="TOP_LEFT" prefHeight="66.0" prefWidth="144.0" text="Characteristics : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="characteristicText" prefHeight="74.0" prefWidth="293.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="58.0" prefWidth="33.0" />
+                  <Label prefHeight="27.0" prefWidth="122.0" text="Check-in Time :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="checkInTimeText" prefHeight="23.0" prefWidth="112.0" />
+                  <VBox prefHeight="30.0" prefWidth="26.0" />
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="139.0" text="Check-out Time : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="checkOutTimeText" prefHeight="23.0" prefWidth="119.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="129.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="30.0" prefWidth="33.0" />
+                  <Label alignment="TOP_LEFT" prefHeight="110.0" prefWidth="82.0" text="Facilities : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="facilitiesText" prefHeight="130.0" prefWidth="190.0" />
+                  <VBox prefHeight="82.0" prefWidth="14.0" />
+                  <Label alignment="TOP_LEFT" prefHeight="106.0" prefWidth="54.0" text="Rules : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="rulesText" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="38.0" />
+                  <Label prefHeight="30.0" prefWidth="135.0" text="Contact Number : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="contactNumText" prefHeight="23.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="35.0" prefWidth="38.0" />
+                  <Label fx:id="errorLabel" prefHeight="30.0" prefWidth="524.0" text="Error" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="610.0">
+               <children>
+                  <VBox prefHeight="42.0" prefWidth="440.0" />
+                  <Button mnemonicParsing="false" onAction="#onSaveBn" prefHeight="33.0" prefWidth="118.0" text="SAVE" textFill="#2e96d7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

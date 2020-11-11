@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RoomViewController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="66.0" prefWidth="22.0" />
+                  <Label fx:id="serviceTypeLabel" prefHeight="66.0" prefWidth="210.0" text="Room Type">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="58.0" prefWidth="226.0" />
+                  <Button mnemonicParsing="false" onAction="#clickBackbtn" prefHeight="30.0" prefWidth="82.0" text="Back" textFill="#4c6bd2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="230.0" prefWidth="20.0" />
+                  <Label prefHeight="27.0" prefWidth="98.0" text="Room size : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sizeLabel" prefHeight="29.0" prefWidth="113.0" text="size" />
+               </children>
+            </HBox>
+            <HBox prefHeight="196.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="230.0" prefWidth="20.0" />
+                  <VBox prefHeight="225.0" prefWidth="266.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="129.0" text="Room facilities  : ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="facilitiesLabel" alignment="TOP_LEFT" prefHeight="170.0" prefWidth="266.0" text="facilities" wrapText="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="227.0" prefWidth="23.0" />
+                  <VBox prefHeight="128.0" prefWidth="267.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="129.0" text="Service  : ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="freeServiceListView" prefHeight="151.0" prefWidth="267.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="41.0" />
+                  <VBox prefHeight="78.0" prefWidth="140.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="143.0" text="Additional services" />
+                        <ListView fx:id="choiceListView" onMouseClicked="#clickChoiceListView" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="50.0" />
+                  <ListView fx:id="allServiceListView" onMouseClicked="#clickAllServiceListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="410.0">
+                     <children>
+                        <Label fx:id="errorLabel" alignment="CENTER" prefHeight="38.0" prefWidth="378.0" text="Error" textFill="RED" />
+                     </children></HBox>
+                  <Button mnemonicParsing="false" onAction="#clickReservebtn" prefHeight="46.0" prefWidth="146.0" text="Reserve" textFill="#f89901">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

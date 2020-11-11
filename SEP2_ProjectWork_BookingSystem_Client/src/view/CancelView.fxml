@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="170.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CancelViewController">
+   <children>
+      <VBox prefHeight="154.0" prefWidth="336.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="336.0">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="82.0" prefWidth="336.0" text="Are you sure you want to ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="336.0">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="29.0" prefWidth="326.0" text="cancel the reservation?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="86.0" prefWidth="336.0">
+               <children>
+                  <VBox prefHeight="86.0" prefWidth="45.0" />
+                  <Button mnemonicParsing="false" onAction="#clickYesBtn" prefHeight="35.0" prefWidth="89.0" text="YES" textFill="#0473f2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="86.0" prefWidth="64.0" />
+                  <Button mnemonicParsing="false" onAction="#clickNoBtn" prefHeight="35.0" prefWidth="91.0" text="NO" textFill="#0473f2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

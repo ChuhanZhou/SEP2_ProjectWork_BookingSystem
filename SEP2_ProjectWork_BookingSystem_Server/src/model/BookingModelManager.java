@@ -43,7 +43,6 @@ public class BookingModelManager implements BookingModel
     domainListReaderWriterInterface = new DomainListReaderWriter(new UserList(),new RoomList(),new OrderList());
     daoModel = new DAOModelManager(url,user,password);
     connectToDBS();
-    daoModel.clear();
   }
 
   private void connectToDBS()
